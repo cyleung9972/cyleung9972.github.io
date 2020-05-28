@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(./pic/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.img-header{
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered p{
+  font-family: "Papyrus", fantasy, sans-serif;
+  font-size: 4em;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color:black;
+  font-weight: bold;
+  text-decoration: none solid rgb(68, 68, 68);
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+hr.style-two {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+.about p{ 
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  letter-spacing: -0.7px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.rightcol h3{
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: -0.2px;
+  word-spacing: 2px;
+  font-weight: 700;
+}
+
+.rightcol h5{
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: -0.2px;
+  word-spacing: 2px;
+  font-weight: 700;
+}
+.rightcol h4{
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: -0.2px;
+  word-spacing: 2px;
+  font-weight: 700;
+}
+
+.leftcol a{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  letter-spacing: 0px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: 700;
+  font-variant: small-caps;
+
+}
+
+.contactheader{
+  width: 40%;
+  height: 50%;
+  margin-top: 6%;
+  margin-left: 20%;
+}
+
+.socialmedia{
+  width: 1000%;
+}
+
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+a:link {
+  color: black;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#myBtn:hover {
+  background-color: rgba(36, 34, 34, 0.178);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

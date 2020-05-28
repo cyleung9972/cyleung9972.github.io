@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" media="screen" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <title>Leung Chin Yat Vincent</title>
+</head>
+
+<!-- 
+Design your own home page under the department system. Page layout is up to each individual; however, information to appear on the page should include:
+a. Title
+b. Your name (or nicknames)
+c. Your picture(s) or alternatives
+d. A good introduction of yourself
+e. Others
+You must hard code your homepage in HTML, CSS, Bootstrap and Javascript (optional). No visual IDE tools are allowed. For example, dreamwaver allows developer to drag UI components and generate source code. All the core codes should be developed by yourself (Hard Code).-->
+
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <script>
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+  </script>
+
+
+  <div>
+    <section>
+      <nav class="navbar sticky-top navbar-light bg-dark justify-content-center pb-2">
+        <a class="navbar-brand text-white" href="/index.html" style="font-weight: bold;">Home</a>
+        <a class="navbar-brand text-white" href="/contact.html" style="font-weight: bold;">Contact</a>
+      </nav>
+
+      <div class="container-fluid">
+        <div class="row justify-content-start">
+          <div class="col">
+            <img src="./pic/head.jpg" alt="head" class="img-header">
+            <div class="centered pr-5">
+              <p class="mb-0" style="text-align: center; font-style: italic; font-size: 2em;">Hi, I'm</p>
+              <p style="text-align:center; line-height: 0.6;">- Vincent Leung -</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+            <nav id="navbar" class="navbar navbar-light">
+              <nav class="nav nav-pills flex-column text-dark pt-5 leftcol">
+                <img src="./pic/icon.jpg" style="width: 90%;border-radius: 50%;">
+                <br>
+                <a class="nav-link text-dark" href="#about"><abbr title="GoToAbout">ABOUT ME</abbr></a>
+                <a class="nav-link text-dark" href="#skills"> <abbr title="GoToSkills">SKILLS</abbr></a>
+                <a class="nav-link text-dark" href="#education"><abbr title="GoToEducation">EDUCATION</abbr></a>
+                <a class="nav-link text-dark" href="#experience"><abbr title="GoToExperience">EXPERIENCE</abbr></a>
+              </nav>
+            </nav>
+            <div class="row">
+              <div class="col-2 ml-0"></div>
+              <div class="col-2">
+                <a href="https://www.facebook.com/cy.leung.10" target="_blank"><i class="fa fa-facebook-square"
+                    style="color:black"></i></a>
+              </div>
+              <div class="col-2">
+                <a href="https://www.instagram.com/chinyatleung__/" target="_blank"><i class="fa fa-instagram"
+                    style="color:black"></i></a>
+              </div>
+              <div class="col-2">
+                <a href="https://www.linkedin.com/in/chinyatleung-972/" target="_blank"><i class="fa fa-linkedin-square"
+                    style="color:black"></i></i></a>
+              </div>
+              <div class="col-2">
+                <a href="https://twitter.com/ChinYatCY" target="_blank"><i class="fa fa-twitter-square"
+                    style="color:black"></i></a>
+              </div>
+
+            </div>
+          </div>
+
+          <hr>
+          <!-- Right col -->
+          <div id="about" class="col-7 col-sm-7 col-md-6 col-lg-6 rightcol">
+            <div class="row about">
+              <section style="text-align: justify;">
+                <br><br><br>
+                <h5>ABOUT ME</h5>
+                <h3>WHO AM I?</h3>
+                <p>
+                  Hi I'm Vincent, from Hong Kong. I am current a year 3 student majoring in financial technology in
+                  Department of Computing from The Hong Kong Polytechnic University. Fintech applications like FPS,
+                  securities service and blockchain start to be widely used in Hong Kong. Fintech plays an important
+                  role in the local financial development. As a Financial Technology student, I aim to utilize my gained
+                  knowledge and my passion for contributing to the growth of Fintech in the city.</p>
+                <p>
+                  I love playing basketball and have represented my secondary school in many competitions. I got a price
+                  in Inter-School Basketball Competition luckily. My active participation in sports has taught me many
+                  skills. For example, communication skills.
+                </p>
+
+                <h4>Interest area</h4>
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                    <div class="card bg-dark text-white">
+                      <img class="card-img-top" src="./pic/fintech.jpg" alt="fintech" style="height: 100px">
+                      <div class="card-body">
+                        <p class="class= card-text text-light" style="text-align: center; font-weight: bold; ">FinTech
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                    <div class="card bg-dark text-white">
+                      <img class="card-img-top" src="./pic/blockchain.png" alt="Blockchain" style="height: 100px;">
+                      <div class="card-body" style="text-align: center; font-weight:bold; ">
+                        <p class="card-text text-light" style="text-align: center;font-weight: bold;">Blockchain</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                    <div class="card bg-dark text-white">
+                      <img class="card-img-top" src="./pic/bitcoin.jpg" alt="Card image" style="height: 100px;">
+                      <div class="card-body">
+                        <p class="class= card-text text-light" style="text-align: center;font-weight: bold;">
+                          CryptoCurrency</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <hr>
+
+            <div id="skills" class="row justify-content-center">
+              <div class="col-12">
+                <section>
+                  <br><br><br>
+                  <h5>MY SPECIALTY</h5>
+                  <h3>MY SKILLS</h3>
+                  <br>
+                </section>
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                <p>MS Office Suite: Advanced</p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated" style="width:85%"></div>
+                </div>
+                <br>
+                <p>Python (matplotlib,numpy): Intermediate</p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated" style="width:77%"></div>
+                </div>
+                <br>
+                <p>Matlab: Intermediate</p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated" style="width:45%"></div>
+                </div>
+                <br>
+                <p>R: Basic</p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated" style="width:30%"></div>
+                </div>
+                <br>
+
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                <p>Java: Basic</p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated" style="width:30%"></div>
+                </div>
+                <br>
+                <p>JavaScript: Basic</p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated" style="width:40%"></div>
+                </div>
+                <br>
+                <p>HTML, CSS, Php: Intermediate</p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated" style="width:65%"></div>
+                </div>
+                <br>
+                <p>Oracle SQL: Intermediate</p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated" style="width:50%"></div>
+                </div>
+                <br>
+              </div>
+            </div>
+            <hr>
+
+            <div id="education" class="row justify-content-center">
+              <div class="col-12">
+                <section>
+                  <br><br><br>
+                  <h5>EDUCATION</h5>
+                  <h3>EDUCATIONAL BACKGROUND</h3>
+                  <br>
+                </section>
+              </div>
+              <div class="col-12">
+                <div id="demo" class="carousel slide justify-content-center mx-3" data-ride="carousel"
+                  data-interval="false" data-ride="carousel" data-pause="hover">
+                  <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                  </ul>
+
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <section style="text-align:center">
+                        <div class="jumbotron bg-dark text-light">
+                          <h3>Bachelor Degree</h3>
+                          <p>2019 - Present</p>
+                          <p>BSc in Financial Technology</p>
+                          <p>The Hong Kong Polytechnic University</p>
+                          <br>
+                        </div>
+                      </section>
+                    </div>
+
+                    <div class="carousel-item ">
+                      <section style="text-align:center">
+                        <div class="jumbotron bg-dark text-light">
+                          <h3>Associate Degree</h3>
+                          <p>2017 - 2019</p>
+                          <p>Associate in Business</p>
+                          <p>PolyU Hong Kong Community College</p>
+                          <br>
+                        </div>
+                      </section>
+                    </div>
+
+                    <div class="carousel-item">
+                      <section style="text-align:center">
+                        <div class="jumbotron bg-dark text-light">
+                          <h3>Secondary Education</h3>
+                          <p>2011 - 2017</p>
+                          <p>Hong Kong Diploma of Secondary Education Examination</p>
+                          <p>CCC Ming Kei College</p>
+                          <br>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <br><br>
+
+
+
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <section>
+                  <div id="experience"></div>
+                  <h5>EXPERIENCE</h5>
+                  <h3>EXTRA-CURRICULAR ACTIVITIES</h3>
+                  <br>
+                </section>
+              </div>
+              <div class="col">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>May 2020 - Present</td>
+                      <td>
+                        <p>FinTech Career Accelerator Scheme (Training sessions)</p>
+                        <p>Hong Kong Monetary Authority –</p>
+                        <ul class="mx-3">
+                          <li>Local Fintech enterprises are invited to share their
+                            solution</li>
+                          <li>Solution demonstrations in the areas of AI in FinTech (Stock investment and Regtech)</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>April 2020 - Present</td>
+                      <td>
+                        <p>Cyberport and AWS Educate Career Pathways Competition 2020</p>
+                        <p>Cyberport and AWS educate -</p>
+                        <ul class="mx-3">
+                          <li>Provide students with the appropriate resources to
+                            accelerate cloud-related learning</li>
+                          <li>Learn about cloud technology in different levels
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>October 2019 - Present</td>
+                      <td>
+                        <p>International Blockchain Olympiad</p>
+                        <p>The Hong Kong Blockchain Society -
+                          Hong Kong Blockchain Training 2019-2020</p>
+                        <ul class="mx-3">
+                          <li>Deepen understanding on application of blockchain</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>April 2019</td>
+                      <td>
+                        <p>PolyU Hong Kong Community College</p>
+                        <p>Field Visit to Hong Kong Science Park Phase 3</p>
+                        <ul class="mx-3">
+                          <li>Comprehend about environmental protection technology in science park</li>
+                          <li>Visit the exhibition of Fiber-optic</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>March 2019</td>
+                      <td>
+                        <p>PolyU Hong Kong Community College</p>
+                        <p>Visit to HKEX</p>
+                        <ul class="mx-3">
+                          <li>Gain knowledge about operation and history of HKEX</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+    </section>
+  </div>
+</body>
+
+</html>
