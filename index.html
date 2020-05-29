@@ -32,11 +32,15 @@ You must hard code your homepage in HTML, CSS, Bootstrap and Javascript (optiona
     };
 
     function scrollFunction() {
-      if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+      if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
         mybutton.style.display = "block";
       } else {
         mybutton.style.display = "none";
       }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
   </script>
 
